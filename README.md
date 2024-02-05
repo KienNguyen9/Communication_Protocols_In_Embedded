@@ -25,3 +25,18 @@ Nguyên tắc cơ bản trong truyền thông nối tiếp UART, định dạng 
     - Và do hiện nay các máy tính sẽ giao tiếp với các ngoại vi như chuột, bàn phím, các loại caple khác qua Ethernet hoặc USB. Ethernet and USB between computers and peripherals
 - Tuy nhiên UART vẫn rất quan trọng cho việc truyền dữ liệu ở tốc độ thấp, các ứng dụng lưu thông thấp bởi vì nó rất đơn giản, chi phí thấp và dễ thực hiện. Still important for lower-speed, low-throughput applications.
 
+<h2>Về thời gian truyền và động bộ hóa dữ liệu. About timing / synchronization</h2>
+
+- Một trong những ưu điểm lớn của UART là đồng bộ giữa thiết bị thu và phát. UART is synchronous - the transmitter and receiver do not share a common clock
+- The transmit and receiver therefore must:
+    - Transmit at the same (known) speed (the both sides have same baud rate) (để có được cùng `same bit timming`). Common UART baud rates 4800, 9600, 19200, 57600, 115200.
+    - Use the same frame structure/parameters . Sau khi có cùng `baud rate` thì cũng cần phải có cùng cấu trúc và tham số khung
+
+<h2>UART frame format</h2>
+
+Các khung UART chứa các: (UART frames consist of)
+    - `Start`/`Stop` bits : Bit bắt đầu và kế thức
+    - `Data bits` : các bit dữ liệu
+    - `Parity bit` Optional -  Bit chẵn lẻ (tùy chọn) 
+
+2:30    
