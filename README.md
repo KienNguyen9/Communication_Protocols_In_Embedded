@@ -38,5 +38,22 @@ Các khung UART chứa các: (UART frames consist of)
     - `Start`/`Stop` bits : Bit bắt đầu và kế thức
     - `Data bits` : các bit dữ liệu
     - `Parity bit` Optional -  Bit chẵn lẻ (tùy chọn) 
+High voltage ("mark") = 1, low voltage ("space") = 0
+In the idle state, the line is help high. Ở trạng thái không hoạt động, khi không có dữ liệu nào được truyền đi, đường truyền được giữ ở mức cao, để dễ phát hiện đường truyền bị hỏng.
 
-2:30    
+![Minh họa frame của UART Protocol](image.png)
+
+
+<h2>Start and Stop bit</h2>
+
+Vì UART là bộ truyền nhận đồng bộ (synchronous) nên bộ phát cần một số cách để báo hiệu các bit dữ liệu đang đến. Thực hiện bằng cách sử dụng bit đầu
+
+The start bit indicates data is coming. Transition from idle(high) to low
+The stop bit(s) indicate data is complete. Stay/Return to idle(high)
+
+<h2>Data bits</h2>
+...
+<h2>Parity bit</h2>
+...
+
+<h2>Tổng kết</h2> 
