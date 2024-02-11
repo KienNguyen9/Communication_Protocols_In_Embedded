@@ -22,3 +22,26 @@ SPI - Serial Peripheral Interface: là "giao diện ngoại vi nối tiếp đ�
     - Bộ mã hóa/giải mã: ADC, DAC.
     - Màn hình LCD: Màn hình LCD đồ họa, màn hình OLED.
     - Thiết bị ngoại vi khác: RFID, Bluetooth, WiFi.
+
+## Lập trình SPI:
+
+Cách thức lập trình SPI sẽ tùy thuộc vào vi điều khiển và ngôn ngữ lập trình, tuy nhiên các bước cơ bản đều tương tự nhau:
+
+### 1. Khởi tạo
+
+Cấu hình các thông số SPI bao gồm: 
+- Tốc độ baudrate
+- Chế độ Master/slave
+- Xung nhịp SCK
+
+### 2. Chọn Slave
+
+- Sử dụng chân `SS` để chọn Slave cụ thể muốn giao tiếp
+
+### 3. Gửi/nhận dữ liệu
+
+- Sử dụng các thanh ghi dữ liệu để gửi/nhận dữ liệu theo từng byte
+
+### 4. Kết thúc
+
+- Xử lí nhận được dữ liệu và giải phóng tài nguyền SPI
