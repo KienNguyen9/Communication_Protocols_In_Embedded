@@ -54,4 +54,4 @@ Cấu hình các thông số SPI bao gồm:
 |---|---|---|---| 
 |UART Serial | 230 kbit/s | 1 MB/s | 1(point to point) |
 |I2C | 400 kbit/s | 400 kbit/s | Many (limited by address) |
-|SPI | 60 Mbit/s | 32 Mbit/s | Many (limited by  SC GPIO pins)|
+|SPI | 60 Mbit/s | 32 Mbit/s | Many (limited by  SC GPIO pins) hoặc thêm IC dịch|
