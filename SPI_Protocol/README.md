@@ -45,3 +45,13 @@ Cấu hình các thông số SPI bao gồm:
 ### 4. Kết thúc
 
 - Xử lí nhận được dữ liệu và giải phóng tài nguyền SPI
+
+
+## So sánh: SPI - I2C - UART
+
+----
+|Interface| Maximum speed (gen 2) | Maximum speed (gen 3) | Maximum Peripheral Devices|
+|---|---|---|---| 
+|UART Serial | 230 kbit/s | 1 MB/s | 1(point to point) |
+|I2C | 400 kbit/s | 400 kbit/s | Many (limited by address) |
+|SPI | 60 Mbit/s | 32 Mbit/s | Many (limited by  SC GPIO pins)|
