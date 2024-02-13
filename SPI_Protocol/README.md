@@ -76,7 +76,7 @@ Có 4 MODE hoạt động
 
 |Mode|CPOL|CPHASE|Comment|
 |---|---|---|---|
-|Mode 0| 0 | 0 | Active state of clock is 1, Data sampling at leading edge |
-|Mode 1| 0 | 1 | Active state of clock is 1, Data sampling at trailing edge |
-|Mode 2| 1 | 0 | Active state of clock is 0 , Data sampling at leading edge |
-|Mode 3| 1 | 1 | Active state of clock is 0 , Data sampling at trail`ing edge |
+|Mode 0| 0 | 0 | Active state of clock is `1`, Data sampling at `leading` edge |
+|Mode 1| 0 | 1 | Active state of clock is `1`, Data sampling at `trailing` edge |
+|Mode 2| 1 | 0 | Active state of clock is `0` , Data sampling at `leading` edge |
+|Mode 3| 1 | 1 | Active state of clock is `0` , Data sampling at `trailing` edge |
