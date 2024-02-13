@@ -80,3 +80,16 @@ Có 4 MODE hoạt động
 |Mode 1| 0 | 1 | Active state of clock is `1`, Data sampling at `trailing` edge |
 |Mode 2| 1 | 0 | Active state of clock is `0` , Data sampling at `leading` edge |
 |Mode 3| 1 | 1 | Active state of clock is `0` , Data sampling at `trailing` edge |
+
+
+## Gian do thời gian
+
+### Cách thức xác định mode
+
+![alt text](image.png)
+
+- Khi `SS` xuống mức 1 thì có thể truyền dữ liệu
+- Khi .. thì mode ...
+
+### Mô tả chi tiết hơn
+![alt text](image-1.png)
