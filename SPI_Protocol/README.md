@@ -55,3 +55,28 @@ Cấu hình các thông số SPI bao gồm:
 |UART Serial | 230 kbit/s | 1 MB/s | 1(point to point) |
 |I2C | 400 kbit/s | 400 kbit/s | Many (limited by address) |
 |SPI | 60 Mbit/s | 32 Mbit/s | Many (limited by  SC GPIO pins) hoặc thêm IC dịch|
+
+## Các vấn đề khi giao tiếp SPI
+
+### 1. Trình tự gửi dữ liệu: MSB (Bit cao nhất trước) hoặc LSB (bit thấp nhất trước)
+
+`setBitOrder()`: MSB/LSB 
+
+### 2. Cài đặt tốc độ
+
+`setClockSpeed`: tùy vào nhu cầu và khả năng đáp ứng của Board
+
+### 3. Độ chia (liên quan với tốc độ bên trên)
+`setClockDivider()`
+
+### 4. Cài đặt mode truyền dữ liệu
+
+`setDataMode()` liên quan với clock (xung nhịp) và sample (mẫu)
+Có 4 MODE hoạt động
+
+|Mode|CPOL|CPHASE|Comment|
+|---|---|---|---|
+|Mode 0| 0 | 0 | Active state of clock is 1, Data sampling at leading edge |
+|Mode 1| 0 | 1 | Active state of clock is 1, Data sampling at trailing edge |
+|Mode 2| 1 | 0 | Active state of clock is 0 , Data sampling at leading edge |
+|Mode 3| 1 | 1 | Active state of clock is 0 , Data sampling at trail`ing edge |
