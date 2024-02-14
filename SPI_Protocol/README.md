@@ -108,3 +108,19 @@ Có 4 MODE hoạt động
 ### Ví dụ: MODE 0 - với CPOL = 0, CPHASE = 0
 
 ![alt text](image-2.png)
+
+Mỗi lần truyền nhận thì dữ liệu có độ lớn 1 byte = 8 bits. Tương đương 8 xung `clock` để truyền
+
+### Ví dụ 2: Đây là ví dụ quá trình truyền song công 
+
+![alt text](image-3.png)
+
+Vì có thể truyền song công nên SPI có thể đạt tốc độ truyền nhận dữ liệu lớn
+Khác so với I2C chỉ có thể truyền hoặc nhận dữ liệu tại 1 thời điểm
+
+
+### Note
+
+- Thiết bị `Master` KHÔNG ĐỢI `Slave` còn `Slave` phải đợi `Master`
+- Khi `Master` muốn truyền/nhận dữ liệu cho `Slave` thì chỉ cần cấp tín hiệu mức thấp cho chân `SS` và yêu cầu `Slave` nhận hoặc truyền tín hiệu data. 
+- Ngược lại `Slave` muốn truyền/nhận dữ liệu thì phải đợi `Master` cho phép bằng cách đưa chân `SS` xuống mức thấp
