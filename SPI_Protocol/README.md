@@ -82,14 +82,18 @@ Có 4 MODE hoạt động
 |Mode 3| 1 | 1 | Active state of clock is `0` , Data sampling at `trailing` edge |
 
 
-## Gian do thời gian
+## Giản do thời gian
 
 ### Cách thức xác định mode
 
 ![alt text](image.png)
 
+## Chú ý các yếu điều sau:
+
+- Đầu tiên ta cần có 1 nguồn cấp xung `SCLK` từ đây tín hiệu sẽ được truyền theo xung clock này  
 - Khi `SS` xuống mức 1 thì có thể truyền dữ liệu
-- Khi .. thì mode ...
+- Với `CPOL` thì ta xác định vị trí lấy dữ liệu theo cạnh lên hay cạnh xuống của xung `SCLK`
+- Với `CPHASE` thì ta xác định dữ liệu sẽ được truyền theo xung clock như thế nào sớm hay muộn hơn nữa pha để lấy dữ liệu
 
 ### Mô tả chi tiết hơn
 ![alt text](image-1.png)
