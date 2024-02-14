@@ -52,7 +52,7 @@ Cấu hình các thông số SPI bao gồm:
 ----
 |Interface| Maximum speed (gen 2) | Maximum speed (gen 3) | Maximum Peripheral Devices|
 |---|---|---|---| 
-|UART Serial | 230 kbit/s | 1 MB/s | 1(point to point) |
+|UART Serial | 230 kbit/s | 1 Mbit/s | 1(point to point) |
 |I2C | 400 kbit/s | 400 kbit/s | Many (limited by address) |
 |SPI | 60 Mbit/s | 32 Mbit/s | Many (limited by  SC GPIO pins) hoặc thêm IC dịch|
 
@@ -90,10 +90,13 @@ Có 4 MODE hoạt động
 
 ## Chú ý các yếu điều sau:
 
+- Để xác định lấy tín hiệu data tại thời điểm nào của xung clock
 - Đầu tiên ta cần có 1 nguồn cấp xung `SCLK` từ đây tín hiệu sẽ được truyền theo xung clock này  
 - Khi `SS` xuống mức 1 thì có thể truyền dữ liệu
 - Với `CPOL` thì ta xác định vị trí lấy dữ liệu theo cạnh lên hay cạnh xuống của xung `SCLK`
 - Với `CPHASE` thì ta xác định dữ liệu sẽ được truyền theo xung clock như thế nào sớm hay muộn hơn nữa pha để lấy dữ liệu
+
+
 
 ### Mô tả chi tiết hơn
 ![alt text](image-1.png)
