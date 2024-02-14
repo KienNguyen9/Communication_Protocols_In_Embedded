@@ -100,3 +100,11 @@ Có 4 MODE hoạt động
 
 ### Mô tả chi tiết hơn
 ![alt text](image-1.png)
+
+- `CPOL` chọn lấy tín hiệu khi `Clock` ở mức cao hay thấp
+- `CPHASE` chọn pha nào sẽ truyền tín hiệu data vào `MOSI` hoặc `MOSI` để quá trình truyền và nhận diễn ra có tín hiệu ổn định nhất
+
+
+### Ví dụ: MODE 0 - với CPOL = 0, CPHASE = 0
+
+![alt text](image-2.png)
