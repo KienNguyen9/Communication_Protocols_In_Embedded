@@ -10,3 +10,22 @@ I2C là một giao thức truyền thông nối tiếp đồng bộ, sử dụng
 - Tốc đọ truyền dữ liệu thấp: tốc độ truyền dữ liệu tiêu chuẩn là 100 kbps, 400 kbps và 1mbps
 - Đơn giản và dễ sử dụng (hơn so với SPI)
 
+### Sơ đồ đấu nối
+
+![alt text](image.png)
+
+Cần có 2 điện trở kéo lên (Pull up resistor)
+
+### Gói tin 
+
+![alt text](image-1.png)
+
+Tóm tắt các thành phần của gói tin:
+- Điều kiện bắt đầu, điều kiện kết thúc
+- Địa chỉ của slave (address frame)
+- Bit xác định đọc/ghi
+- Bit phản hồi Có/Không của slave cần giao tiếp
+- Và các Data cần truyền
+
+Các slave không giao tiếp trực tiếp với nhau
+Các slave sẽ giao tiếp với Master thông qua địa chỉ (7 hoặc 10 bits)
