@@ -27,5 +27,8 @@ Tóm tắt các thành phần của gói tin:
 - Bit phản hồi Có/Không của slave cần giao tiếp
 - Và các Data cần truyền
 
+Ghi chú: Do chỉ có 1 đường dây `SDA` để truyền nhận dữ liệu, nên trong gói tin, phần màu xám là tín hiệu từ Master gửi đi, phần màu trắng là tín hiệu phản hồi từ slave
+
 Các slave không giao tiếp trực tiếp với nhau
 Các slave sẽ giao tiếp với Master thông qua địa chỉ (7 hoặc 10 bits)
+
