@@ -12,7 +12,7 @@ Nguyên tắc cơ bản trong truyền thông nối tiếp UART, định dạng 
 - TX & RX (each direction)
 - Can be simplex, half-duplex or full-duplex. 
     - Simplex: dữ liệu chỉ được gửi theo 1 hướng
-    - Half-duplex (bán song công): mỗi bên sẽ truyền nhận lần lược, bên này truyền bên kia nhận khi kết thúc thì bên kia truyền bên này nhận.
+    - Half-duplex (bán song công): mỗi bên sẽ truyền nhận lần lược, bên này truyền bên kia nhận khi kết thúc thì bên kia truyền bên này nhận. 
     - Full-duplex (song công): 2 bên sẽ truyền dữ liệu đồng thời
 - Data is transmitted as frames: dữ liệu sẽ được truyền theo dạng khung. Quan trọng ở chỗ định dạng frames và nội dung của frames 
 
@@ -39,7 +39,7 @@ Các khung UART chứa các: (UART frames consist of)
     - `Data bits` : các bit dữ liệu
     - `Parity bit` Optional -  Bit chẵn lẻ (tùy chọn) 
 High voltage ("mark") = 1, low voltage ("space") = 0
-In the idle state, the line is help high. Ở trạng thái không hoạt động, khi không có dữ liệu nào được truyền đi, đường truyền được giữ ở mức cao, để dễ phát hiện đường truyền bị hỏng.
+In the idle state, the line is help high. Ở trạng thái không hoạt động, khi không có dữ liệu nào được truyền đi, đường truyền được giữ ở mức cao, để dễ phát hiện đường truyền bị hỏng. 
 
 ![Minh họa frame của UART Protocol](image.png)
 
