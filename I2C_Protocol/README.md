@@ -1,6 +1,7 @@
-# I2C protocol 
+# I2C protocol - Inter-Integrated Circuit - Mạch tích hợp
 
 I2C là một giao thức truyền thông nối tiếp đồng bộ, sử dụng 2 dây tín hiệu để kết nối giữa các vi điều khiển và các thiết bị ngoại vi
+Phương thức truyền nhận dữ liệu 
 
 ## Đặc điểm của I2C
 
