@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2024
  * 
  */
-#include <iostream>
+
 
 /**
  * @brief macro cac chân đã kết nối trên vi điều khiển
@@ -33,11 +33,14 @@
 #define SS_OUTPUT DDRD |= (1 << DDD7)
 #define MISO_INPUT DDRD &= ~(1 << DDD6)
 
+/**
+ * @brief Macro cho chân MOSI ở mức cao hoặc mức thấp
+ * 
+ */
 
-void setup()
-{
+#define MOSI_HIGH PORTD |=  (1<<PD5)
+#define MOSI_LOW PORTD &= ~(1<<PD5)
 
-}
 
 
 int main()
