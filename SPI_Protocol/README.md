@@ -124,3 +124,8 @@ Khác so với I2C chỉ có thể truyền hoặc nhận dữ liệu tại 1 th
 - Thiết bị `Master` KHÔNG ĐỢI `Slave` còn `Slave` phải đợi `Master`
 - Khi `Master` muốn truyền/nhận dữ liệu cho `Slave` thì chỉ cần cấp tín hiệu mức thấp cho chân `SS` và yêu cầu `Slave` nhận hoặc truyền tín hiệu data. 
 - Ngược lại `Slave` muốn truyền/nhận dữ liệu thì phải đợi `Master` cho phép bằng cách đưa chân `SS` xuống mức thấp
+
+
+## Bài 2 - Giao tiếp giữa 1 Master và 1 Slave
+
+### 1. Viết thư viện cho Master 
