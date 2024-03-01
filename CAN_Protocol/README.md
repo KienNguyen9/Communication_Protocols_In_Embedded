@@ -11,7 +11,7 @@ Khi một node muốn truyền dữ liệu, nó sẽ tạo ra một gói tin (me
 Gói tin này sẽ được gửi đi trên bus và tất cả các node khác trên bus đều có thể nhận được.
 
 Khả năng chống nhiễu cao: CAN sử dụng phương pháp truyền dẫn vi sai (differential signaling) giúp giảm thiểu nhiễu điện từ.
-
+gi
 Khả năng phát hiện lỗi và sửa lỗi: CAN sử dụng mã kiểm tra lỗi (CRC) để phát hiện lỗi trong quá trình truyền dữ liệu. Nếu lỗi được phát hiện, CAN sẽ tự động yêu cầu truyền lại dữ liệu.
 
 Tiết kiệm chi phí: CAN chỉ sử dụng hai dây dẫn để truyền dữ liệu, giúp tiết kiệm chi phí so với các hệ thống truyền thông khác.
